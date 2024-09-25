@@ -2,8 +2,8 @@
 
 This project demonstrates how to work with media streams (microphone and camera), screen sharing, and media device management using the WebRTC API and `navigator.mediaDevices`. The project includes functionalities like capturing audio and video from the user, recording media streams, switching between input/output devices, and screen sharing.
 ## images
-![screen record](assets/screencapture.png)
-![video recorder](assets/video-recorder.png)
+![screen record](/video-recorder/assets/screencapture.png)
+![video recorder](/video-recorder/assets/video-recorder.png)
 ## Features
 
 1. **Capture Audio and Video**:
