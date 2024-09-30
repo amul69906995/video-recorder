@@ -1,6 +1,10 @@
 # WebRTC Media Stream, Screen Sharing & Device Management
 
 This project demonstrates how to work with media streams (microphone and camera), screen sharing, and media device management using the WebRTC API and `navigator.mediaDevices`. The project includes functionalities like capturing audio and video from the user, recording media streams, switching between input/output devices, and screen sharing.
+### RtcPeerConnection signaling server
+The signaling server is a crucial component of the WebRTC architecture. It is responsible for exchanging signaling messages
+between peers.
+![signaling server ](/video-recorder/peerConnectionSignalingServer)
 ## images
 ![screen record](/video-recorder/assets/screencapture.png)
 ![video recorder](/video-recorder/assets/video-recorder.png)
