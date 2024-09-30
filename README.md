@@ -4,7 +4,7 @@ This project demonstrates how to work with media streams (microphone and camera)
 ### RtcPeerConnection signaling server
 The signaling server is a crucial component of the WebRTC architecture. It is responsible for exchanging signaling messages
 between peers.
-![signaling server ](/video-recorder/peerConnectionSignalingServer)
+![signaling server ](/video-recorder/assets/peerConnectionSignalingServer.png)
 ## images
 ![screen record](/video-recorder/assets/screencapture.png)
 ![video recorder](/video-recorder/assets/video-recorder.png)
