@@ -27,3 +27,5 @@ ca.crt
 ca.key
 cert.crt
 cert.key
+#envfiles
+.env
