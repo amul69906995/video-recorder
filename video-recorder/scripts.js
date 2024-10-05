@@ -91,7 +91,9 @@ const playRecord =async (e) => {
     }
     if (recordedBlob) {
         const recordedSuperBlob = new Blob(recordedBlob);
-        otherVideoElement.src = URL.createObjectURL(recordedSuperBlob,{ type: 'video/x-matroska' });
+        otherVideoElement.src = URL.createObjectURL(recordedSuperBlob,{ type: 'video/mp4' });
+        const myFile = new File([recordedSuperBlob], "demo.mp4", { type: 'video/mp4' });
+    
         console.log("recorded blob", recordedBlob);
         console.log("recorded super blob", recordedSuperBlob)
         otherVideoElement.controls = true;
@@ -103,6 +105,15 @@ const playRecord =async (e) => {
         // otherVideoElement.controls = true;
         // otherVideoElement.play();
         // },1000*60)
+
+        // Create a temporary download link
+        const downloadLink = document.createElement('a');
+        downloadLink.href = URL.createObjectURL(myFile);
+        downloadLink.download = "demo.mp4"; // Set the file name for download
+        document.body.appendChild(downloadLink); // Append the link to the document body
+        downloadLink.click(); // Programmatically click the link to trigger the download
+        document.body.removeChild(downloadLink); // Remove the link from the DOM after download
+        console.log("File created for download:", myFile);
     }
 }
 const pauseRecord = (e) => {
